@@ -2,7 +2,7 @@
 
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/akshatvg/VachieveIT?logo=github&style=social)](https://github.com/akshatvg/) [![GitHub last commit](https://img.shields.io/github/last-commit/akshatvg/VachieveIT?style=social&logo=git)](https://github.com/akshatvg/) [![GitHub stars](https://img.shields.io/github/stars/akshatvg/VachieveIT?style=social)](https://github.com/akshatvg/VachieveIT/stargazers) [![GitHub forks](https://img.shields.io/github/forks/akshatvg/VachieveIT?style=social&logo=git)](https://github.com/akshatvg/VachieveIT/network)
 
-Project description comes here.
+Portal that displays a student's approved achievements with different features like approval, rejection, adding details, etc.
 
 <p align="center">
 <a href="#!">
@@ -17,7 +17,7 @@ Project description comes here.
 
 ## Requirements
 
-[![GitHub top language](https://img.shields.io/github/languages/top/akshatvg/VachieveIT?logo=css&style=social)](https://github.com/akshatvg/)
+[![GitHub top language](https://img.shields.io/github/languages/top/akshatvg/VachieveIT?logo=php&style=social)](https://github.com/akshatvg/)
 
 The source code of this project is written in **`HTML/CSS/JS/PHP`**. So, you require XAMPP Server to run the project.
 
