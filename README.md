@@ -1,4 +1,4 @@
-# Repo Name
+# VachieveIT
 
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/akshatvg/VachieveIT?logo=github&style=social)](https://github.com/akshatvg/) [![GitHub last commit](https://img.shields.io/github/last-commit/akshatvg/VachieveIT?style=social&logo=git)](https://github.com/akshatvg/) [![GitHub stars](https://img.shields.io/github/stars/akshatvg/VachieveIT?style=social)](https://github.com/akshatvg/VachieveIT/stargazers) [![GitHub forks](https://img.shields.io/github/forks/akshatvg/VachieveIT?style=social&logo=git)](https://github.com/akshatvg/VachieveIT/network)
 
@@ -6,7 +6,7 @@ Portal that displays a student's approved achievements with different features l
 
 <p align="center">
 <a href="#!">
-<img src="https://github.com/akshatvg/VachieveIT/blob/master/Assets/app-icon-64%402x.png" width="120px" height="120px" alt="VachieveIT Logo"/>
+<img src="assets/img/logo.png" width="200px" height="200px" alt="VachieveIT Logo"/>
 </a>
 </p>
 
