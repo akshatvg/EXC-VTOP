@@ -26,7 +26,7 @@ button {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background-color: #222831;
+    background-color: white;
     -webkit-box-shadow: 0 24px 64px rgba(0, 0, 0, 0.24);
     box-shadow: 0 24px 64px rgba(0, 0, 0, 0.24);
     border-radius: 16px;
@@ -47,7 +47,7 @@ button {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    background-color: #222831;
+    background-color: white;
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -173,23 +173,23 @@ button:focus {
 
 /* Sidenav */
 #sidenav-1 {
-    border-right: 15px solid #00ADB5;
+    border-right: 15px solid #2880B9;
     color: black;
 }
 
 /* Navbar */
 .nav-wrapper {
-    background-color: #222831;
+    background-color: #2880B9;
     color: #EEEEEE;
 }
 
 /* Active Sidebar */
 #active {
-    color: #00ADB5;
+    color: #2880B9;
 }
 
 #active-icon {
-    color: #00ADB5;
+    color: #2880B9;
 }
 
 #active::after {
@@ -201,7 +201,7 @@ button:focus {
     top: 15px;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 20px solid #00ADB5;
+    border-right: 20px solid #2880B9;
 }
 
 /* Overlap Main Remove */
@@ -211,17 +211,17 @@ header {
 
 /* Divider */
 .divider {
-    border: 1px solid #00ADB5;
+    border: 1px solid #2880B9;
     width: 100%;
 }
 
 .border-bottom-md {
-    border-bottom: 2px solid #00ADB5;
+    border-bottom: 2px solid #2880B9;
     width: 175px;
 }
 
 .border-bottom-sm {
-    border-bottom: 2px solid #00ADB5;
+    border-bottom: 2px solid #2880B9;
     width: 120px;
 }
 
@@ -265,4 +265,45 @@ header {
 /* Modals */
 #modal {
     transform: translateY(7%) scaleX(1) !important;
+}
+
+/* Text Colored */
+.text-colored {
+    color: #2880B9 !important;
+}
+
+/* Buttons */
+.btn-exc {
+    color: white;
+    background-color: #2880B9;
+    border: 1px solid #2880B9;
+    border-radius: 5px;
+}
+
+.btn-exc:hover {
+    background-color: white;
+    color: #2880B9;
+    border: 1px solid #2880B9;
+}
+
+.btn-exc-green {
+    color: white;
+    background-color: #5CB85B;
+    border: 1px solid #5CB85B;
+    border-radius: 5px;
+}
+
+.btn-exc-green:hover {
+    background-color: white;
+    color: #5CB85B;
+    border: 1px solid #5CB85B;
+}
+
+/* Card-Top */
+.card-top-blue {
+    border-top: 3px solid #2880B9;
+}
+
+.card-top-green {
+    border-top: 3px solid #5CB85B;
 }
