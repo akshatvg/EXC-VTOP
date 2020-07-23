@@ -3,9 +3,6 @@
 
 <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
     <!-- Meta Tags for SEO -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="UTF-8">

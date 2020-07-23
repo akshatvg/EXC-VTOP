@@ -1,34 +1,34 @@
-# VachieveIT
+# EXC-VTOP
 
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/akshatvg/VachieveIT?logo=github&style=social)](https://github.com/akshatvg/) [![GitHub last commit](https://img.shields.io/github/last-commit/akshatvg/VachieveIT?style=social&logo=git)](https://github.com/akshatvg/) [![GitHub stars](https://img.shields.io/github/stars/akshatvg/VachieveIT?style=social)](https://github.com/akshatvg/VachieveIT/stargazers) [![GitHub forks](https://img.shields.io/github/forks/akshatvg/VachieveIT?style=social&logo=git)](https://github.com/akshatvg/VachieveIT/network)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/akshatvg/EXC-VTOP?logo=github&style=social)](https://github.com/akshatvg/) [![GitHub last commit](https://img.shields.io/github/last-commit/akshatvg/EXC-VTOP?style=social&logo=git)](https://github.com/akshatvg/) [![GitHub stars](https://img.shields.io/github/stars/akshatvg/EXC-VTOP?style=social)](https://github.com/akshatvg/EXC-VTOP/stargazers) [![GitHub forks](https://img.shields.io/github/forks/akshatvg/EXC-VTOP?style=social&logo=git)](https://github.com/akshatvg/EXC-VTOP/network)
 
-Portal that displays a student's approved achievements with different features like approval, rejection, adding details, etc.
+Portal that displays a student's approved achievements with different features like approval, rejection, adding details, etc in addition to all EXC details for the clubs and chapters.
 
 <p align="center">
-<a href="#!">
-<img src="assets/img/logo.png" width="200px" height="200px" alt="VachieveIT Logo"/>
+<a href="https://exc-vtop.akshatvg.com">
+<img src="assets/img/logo.png" width="200px" height="200px" alt="EXC-VTOP Logo"/>
 </a>
 </p>
 
-![Generic badge](https://img.shields.io/badge/Random-Swag-orange) 
+![Generic badge](https://img.shields.io/badge/EXC-VTOP-orange) 
 
-#### Link for [demo](#!) 
-[![Generic badge](https://img.shields.io/badge/view-demo-orange)](#!)
+#### Link for [demo](https://exc-vtop.akshatvg.com) 
+[![Generic badge](https://img.shields.io/badge/view-demo-orange)](https://exc-vtop.akshatvg.com)
 
 ## Requirements
 
-[![GitHub top language](https://img.shields.io/github/languages/top/akshatvg/VachieveIT?logo=php&style=social)](https://github.com/akshatvg/)
+[![GitHub top language](https://img.shields.io/github/languages/top/akshatvg/EXC-VTOP?logo=php&style=social)](https://github.com/akshatvg/)
 
 The source code of this project is written in **`HTML/CSS/JS/PHP`**. So, you require XAMPP Server to run the project.
 
 ## Instructions
 
 ```bash
-$ git clone https://github.com/akshatvg/VachieveIT
-$ cd VachieveIT
+$ git clone https://github.com/akshatvg/EXC-VTOP
+$ cd EXC-VTOP
 ```
 1. Run Xampp Server and start everything.
-2. Type `localhost` in your browser and browse to /VachieveIT.
+2. Type `localhost` in your browser and browse to /EXC-VTOP.
 
 
 ## Need help?
@@ -77,9 +77,9 @@ ______      _               _   _               _
 
 ## License
 
-**MIT &copy; [Akshat Gupta](https://github.com/akshatvg/VachieveIT/blob/master/LICENSE)**
+**MIT &copy; [Akshat Gupta](https://github.com/akshatvg/EXC-VTOP/blob/master/LICENSE)**
 
-[![GitHub license](https://img.shields.io/github/license/akshatvg/VachieveIT?style=social&logo=github)](https://github.com/akshatvg/VachieveIT/blob/master/LICENSE) [![Twitter Follow](https://img.shields.io/twitter/follow/akshatvg?style=social)](https://twitter.com/akshatvg)
+[![GitHub license](https://img.shields.io/github/license/akshatvg/EXC-VTOP?style=social&logo=github)](https://github.com/akshatvg/EXC-VTOP/blob/master/LICENSE) [![Twitter Follow](https://img.shields.io/twitter/follow/akshatvg?style=social)](https://twitter.com/akshatvg)
 
 ---------
 
