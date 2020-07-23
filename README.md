@@ -6,7 +6,7 @@ Portal that displays a student's approved achievements with different features l
 
 <p align="center">
 <a href="https://exc-vtop.akshatvg.com">
-<img src="assets/img/logo.png" width="200px" height="200px" alt="EXC-VTOP Logo"/>
+<img src="uploads/img/logo.png" width="200px" height="200px" alt="EXC-VTOP Logo"/>
 </a>
 </p>
 
