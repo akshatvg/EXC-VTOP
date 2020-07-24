@@ -38,7 +38,7 @@ require("templates/nav-vit.php");
                             <label for="password">Password</label>
                         </div>
                         <div class="center">
-                            <button type="button" class="btn btn-exc z-depth-0 waves-effect mb-n4">Login</button>
+                            <a href="#!" class="btn btn-exc z-depth-0 waves-effect mb-n4">Login</a>
                         </div>
                     </div>
                 </div>
