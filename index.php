@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-require("templates/metas.php");
+include("templates/metas.php");
 ?>
 
 <!-- URLs -->
@@ -11,9 +11,9 @@ require("templates/metas.php");
 <link rel="canonical" href="https://exc-vtop.akshatvg.com">
 
 <?php
-require("templates/header.php");
+include("templates/header.php");
 ?>
 
 <?php
-require("templates/footer.php");
+include("templates/footer.php");
 ?>

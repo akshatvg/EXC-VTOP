@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-require("templates/metas.php");
+include("templates/metas.php");
 ?>
 
 <!-- URLs -->
@@ -11,11 +11,11 @@ require("templates/metas.php");
 <link rel="canonical" href="https://exc-vtop.akshatvg.com/loginStud">
 
 <?php
-require("templates/header.php");
+include("templates/header.php");
 ?>
 
 <?php
-require("templates/nav-vit.php");
+include("templates/nav-vit.php");
 ?>
 
 <!-- Main Content -->
@@ -48,7 +48,7 @@ require("templates/nav-vit.php");
 </div>
 
 <?php
-require("templates/footer.php");
+include("templates/footer.php");
 ?>
 
 </html>
