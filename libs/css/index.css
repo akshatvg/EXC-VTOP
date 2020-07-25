@@ -281,6 +281,18 @@ header {
     color: #2880B9 !important;
 }
 
+.text-colored-green {
+    color: #5CB85B !important;
+}
+
+.text-colored-lightblue {
+    color: #00C0EF !important;
+}
+
+.text-colored-orange {
+    color: orange !important;
+}
+
 /* Buttons */
 .btn-exc {
     color: white;

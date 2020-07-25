@@ -20,12 +20,12 @@ include("templates/nav-vit.php");
 
 <!-- Main Content -->
 <div class="container">
-    <!-- Spotlight -->
+    <!-- Notice -->
     <div class="row mt-5">
         <div class="col s12">
             <div class="card white card-top-orange">
                 <div class="card-content">
-                    <span class="card-title black-text">Spotlight</span>
+                    <span class="card-title black-text">Notice</span>
                     <ul id="spotlight">
                         <li class="text-colored">1. You need to complete atleast 90 hours worth of courses to be eligible for the EXC course completion.</li>
                         <li class="text-colored mt-2">2. A final project has to be submitted to the faculty coordinator of the club.</li>
