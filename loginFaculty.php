@@ -38,7 +38,7 @@ include("templates/nav-vit.php");
                             <label for="password">Password</label>
                         </div>
                         <div class="center">
-                            <a href="#!" class="btn btn-exc-green z-depth-0 waves-effect mb-n4">Login</a>
+                            <button id="loginFaculty" class="btn btn-exc-green z-depth-0 waves-effect mb-n4">Login</button>
                         </div>
                     </div>
                 </div>
@@ -50,5 +50,7 @@ include("templates/nav-vit.php");
 <?php
 include("templates/footer.php");
 ?>
+
+</body>
 
 </html>

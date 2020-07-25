@@ -27,7 +27,7 @@ include("templates/nav.php");
     <!-- Cards -->
     <div class="row mb-5 mt-5">
         <div class="col s12 m4">
-            <a href="#!">
+            <a href="view2CC.php">
                 <div class="card white card-top-blue">
                     <div class="card-content">
                         <div class="center">
@@ -104,3 +104,7 @@ include("templates/nav.php");
 <?php
 include("templates/footer.php");
 ?>
+
+</body>
+
+</html>

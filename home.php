@@ -67,4 +67,6 @@ include("templates/nav-vit.php");
 include("templates/footer.php");
 ?>
 
+</body>
+
 </html>
