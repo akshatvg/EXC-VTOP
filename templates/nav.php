@@ -1,7 +1,7 @@
 <nav>
     <div class="nav-wrapper">
         <a href="#" data-target="sidenav-1" class="left sidenav-trigger show-on-large"><i class="material-icons white-text">menu</i></a>
-        <a href="home.php" class="brand-logo heading center" style="font-size: 23px;">EXC-VTOP</a>
+        <a href="/" class="brand-logo heading center" style="font-size: 23px;">EXC-VTOP</a>
     </div>
 </nav>
 
