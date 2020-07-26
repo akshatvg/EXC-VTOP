@@ -1,3 +1,12 @@
+<?php
+
+if (isset($_POST['loginStudBtn'])) {
+    echo htmlspecialchars($_POST['regNo']);
+    echo htmlspecialchars($_POST['password']);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,21 +35,23 @@ include("templates/nav-vit.php");
             <div class="card white card-top-lightblue">
                 <div class="card-content">
                     <span class="card-title black-text">EXC-VTOP Login</span>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="regNo" type="text" class="validate" pattern="[1-2][5-9][A-Za-z]{3}[0-9]{4}" required>
-                            <label for="regNo">Registration Number</label>
+                    <form method="POST" action="loginStud.php">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="regNo" name="regNo" type="text" class="validate" pattern="[1-2][5-9][A-Za-z]{3}[0-9]{4}" required>
+                                <label for="regNo">Registration Number</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">lock</i>
+                                <input id="password" name="password" type="password" class="validate" required>
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="center">
+                                <button name="loginStudBtn" class="btn btn-exc z-depth-0 waves-effect mb-n4" id="loginStudBtn" value="Login">Login</button>
+                            </div>
                         </div>
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">lock</i>
-                            <input id="password" type="password" class="validate" required>
-                            <label for="password">Password</label>
-                        </div>
-                        <div class="center">
-                            <button class="btn btn-exc z-depth-0 waves-effect mb-n4" id="loginStud">Login</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
