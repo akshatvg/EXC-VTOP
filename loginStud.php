@@ -1,12 +1,3 @@
-<?php
-
-if (isset($_POST['loginStudBtn'])) {
-    echo htmlspecialchars($_POST['regNo']);
-    echo htmlspecialchars($_POST['password']);
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,6 +51,28 @@ include("templates/nav-vit.php");
 
 <?php
 include("templates/footer.php");
+?>
+
+<?php
+
+if (isset($_POST['loginStudBtn'])) {
+    // echo htmlspecialchars($_POST['regNo']);
+    // echo htmlspecialchars($_POST['password']);
+
+    if (empty($_POST['regNo'])) {
+        echo "<script>M.toast({ html: 'Registration Number cannot be empty' });</script>";
+    } else {
+        $regNo = $_POST['regNo'];
+        if (!preg_match('/[0-9]{5}/', $regNo)) {
+            echo "<script>M.toast({ html: 'Registration Number does not follow the VIT prescribed format' });</script>";
+        }
+    }
+
+    if (empty($_POST['password'])) {
+        echo "<script>M.toast({ html: 'Password cannot be empty' });</script>";
+    } else { }
+}
+
 ?>
 
 </body>

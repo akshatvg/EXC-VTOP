@@ -1,12 +1,3 @@
-<?php
-
-if (isset($_POST['loginFacultyBtn'])) {
-    echo htmlspecialchars($_POST['empId']);
-    echo htmlspecialchars($_POST['password']);
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,6 +51,28 @@ include("templates/nav-vit.php");
 
 <?php
 include("templates/footer.php");
+?>
+
+<?php
+
+if (isset($_POST['loginFacultyBtn'])) {
+    // echo htmlspecialchars($_POST['empId']);
+    // echo htmlspecialchars($_POST['password']);
+
+    if (empty($_POST['empId'])) {
+        echo "<script>M.toast({ html: 'Employee ID cannot be empty' });</script>";
+    } else {
+        $empId = $_POST['empId'];
+        if (!preg_match('/[0-9]{5}/', $empId)) {
+            echo "<script>M.toast({ html: 'Employee ID must be a 5 digit series of numbers' });</script>";
+        }
+    }
+
+    if (empty($_POST['password'])) {
+        echo "<script>M.toast({ html: 'Password cannot be empty' });</script>";
+    } else { }
+}
+
 ?>
 
 </body>

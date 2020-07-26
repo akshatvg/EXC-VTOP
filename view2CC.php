@@ -1,3 +1,30 @@
+<?php
+
+// Connect to DB
+$conn = mysqli_connect('localhost', 'akshatvg', 'qwerty', 'exc-vtop');
+
+// Check Connection
+// if (!$conn) {
+//     echo "<script>M.toast({ html: 'Database Connection Error' });</script>";
+// }
+
+// SQL Query for Getting All Courses
+$sql = "SELECT code,title,emp_name,emp_school,max_seats FROM courses ORDER BY code";
+
+// Make Query & Get Result
+$result = mysqli_query($conn, $sql);
+
+// Fetch Resulting Rows as an Array
+$courses = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+// Free Result to Free Memory
+mysqli_free_result($result);
+
+// Close Connection
+mysqli_close($conn);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,20 +66,15 @@ include("templates/nav.php");
                         </tr>
                     </thead>
                     <tbody id="2ccCourses">
-                        <tr>
-                            <td>EXC1002</td>
-                            <td>Red Cross</td>
-                            <td>PRIYANKAR SEN</td>
-                            <td>CBST</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>EXC1002</td>
-                            <td>Red Cross</td>
-                            <td>PRIYANKAR SEN</td>
-                            <td>CBST</td>
-                            <td>100</td>
-                        </tr>
+                        <?php foreach ($courses as $course) { ?>
+                            <tr>
+                                <td><?php echo htmlspecialchars($course['code']); ?></td>
+                                <td><?php echo htmlspecialchars($course['title']); ?></td>
+                                <td><?php echo htmlspecialchars($course['emp_name']); ?></td>
+                                <td><?php echo htmlspecialchars($course['emp_school']); ?></td>
+                                <td><?php echo htmlspecialchars($course['max_seats']); ?></td>
+                            </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>
