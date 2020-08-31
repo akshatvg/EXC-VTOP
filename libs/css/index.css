@@ -345,6 +345,9 @@ header {
 .h-65 {
     height: 65vh !important;
 }
+.material-icons{
+    cursor: pointer;
+}
 
 @media only screen and (max-width:780px) {
     .h-65 {

@@ -39,49 +39,13 @@ include("templates/nav.php");
             </a>
         </div>
         <div class="col s12 m4">
-            <a href="#!">
+            <a href="achievements.php">
                 <div class="card white card-top-green">
                     <div class="card-content">
                         <div class="center">
-                            <i class="material-icons small text-colored-green">add</i>
+                        <i class="material-icons small text-colored-green">assessment</i>
                         </div>
-                        <span class="card-title black-text center mt-2">Add Achievements</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col s12 m4">
-            <a href="#!">
-                <div class="card white card-top-orange">
-                    <div class="card-content">
-                        <div class="center">
-                            <i class="material-icons small text-colored-orange">assessment</i>
-                        </div>
-                        <span class="card-title black-text center mt-2">View Achievements</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col s12 m4">
-            <a href="#!">
-                <div class="card white card-top-blue">
-                    <div class="card-content">
-                        <div class="center">
-                            <i class="material-icons small text-colored">delete</i>
-                        </div>
-                        <span class="card-title black-text center mt-2">Delete Achievements</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col s12 m4">
-            <a href="#!">
-                <div class="card white card-top-green">
-                    <div class="card-content">
-                        <div class="center">
-                            <i class="material-icons small text-colored-green">send</i>
-                        </div>
-                        <span class="card-title black-text center mt-2">Submit to Faculty</span>
+                        <span class="card-title black-text center mt-2">Achievements</span>
                     </div>
                 </div>
             </a>
