@@ -39,13 +39,13 @@ include("templates/nav.php");
             </a>
         </div>
         <div class="col s12 m4">
-            <a href="#!">
+            <a href="achievements.php">
                 <div class="card white card-top-green">
                     <div class="card-content">
                         <div class="center">
                         <i class="material-icons small text-colored-green">assessment</i>
                         </div>
-                        <span class="card-title black-text center mt-2">Add Achievements</span>
+                        <span class="card-title black-text center mt-2">Achievements</span>
                     </div>
                 </div>
             </a>
