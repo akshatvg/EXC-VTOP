@@ -17,12 +17,11 @@ include("templates/header.php");
 <?php
 include("templates/nav.php");
 ?>
-
 <!-- Main Content -->
 <div class="container">
     <!-- Heading -->
     <div class="row mt-5">
-        <h4>Your Achievements</h4>
+        <h5>Your Achievements</h5>
     </div>
     <!-- DataTable -->
     <div class="row">
@@ -55,7 +54,18 @@ include("templates/nav.php");
                                 <td>Online coding Competition</td>
                                 <td class="green-text ">Approved</td>
                                 <td><a href="#!"><i class="material-icons blue-text">file_download</i></a></td>
-                                <td><a href="#!"><i class="material-icons red-text text-accent-2">delete</i></a></td>
+                                <td><a href="#!"><i class="material-icons red-text text-accent-2 modal-trigger" href="#modal2">delete</i></a></td>
+                                <!-- Modal Structure -->
+                                <div id="modal2" class="modal">
+                                    <div class="modal-content">
+                                    <h6>Are you sure you want to delete achievement?</h6>
+                                    <p class="red-text">This action cannot be undone!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Delete</a>
+                                    </div>
+                                </div>
+                                <!-- modal end -->
                             </tr>
                             <tr>
                                 <td>Google SWE</td>
@@ -66,8 +76,22 @@ include("templates/nav.php");
                                 <!-- Modal Structure -->
                                 <div id="modal1" class="modal">
                                     <div class="modal-content">
-                                    <h4>Modal Header</h4>
-                                    <p>A bunch of text</p>
+                                    <h5>Google SWE</h5>
+                                    <br>
+                                    <h6>Internship</h6>
+                                    <!-- <br> -->
+                                    <p>SWE intern at Google from Aug-2020 to Nov-2020</p>
+                                    <br>
+                                    <br>
+                                    <label for="teacher">Select teacher</label>
+                                    <select name="teacher" id="teacher">
+                                    <option value="">teacher</option>
+                                    <option value="volvo">12460 - Sanjiban Shekhar Roy</option>
+                                    <option value="volvo">12461 - Dharmendra Singh</option>
+                                    <option value="volvo">12462 - JayaKumar S</option>
+                                    <option value="volvo">12463 - Geetanjali J</option>
+                                    <option value="volvo">12464 - Clement J</option>
+                                    </select>
                                     </div>
                                     <div class="modal-footer">
                                     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
@@ -76,13 +100,46 @@ include("templates/nav.php");
                                 <!-- modal end -->
                                 
                                 <td><a href="#!"><i class="material-icons blue-text">file_download</i></a></td>
-                                <td><a href="#!"><i class="material-icons red-text text-accent-2">delete</i></a></td>
+                                <td><a href="#!"><i class="material-icons red-text text-accent-2 modal-trigger" href="#modal2">delete</i></a></td>
                             </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+    <div class="row mt-5">
+        <h5>Add Achievements</h5>
+    </div>
+    <form>
+    <div class="row mx-4">
+            <div class="input-field col s6" style="width:250px;">
+                <input id="title" type="text" class="validate">
+                <label for="title">Title</label>
+            </div>
+
+            <div class="input-field col s12" style="width:250px;">
+            <select>
+            <option value="" disabled selected>Type</option>
+            <option value="1">Internship</option>
+            <option value="2">Hack-a-thon</option> 
+            <option value="3">Competition</option>
+            </select>
+            </div>
+
+    </div>
+    <!-- <div class="row"> -->
+    <div class="input-field col s6 mx-4">
+          <input id="description" type="text" class="validate">
+          <label for="description">Description</label>
+    </div>
+    <div class="row mx-5">
+    Input file:
+    <input type="file" name="fileToUpload" id="fileToUpload" style="padding:20px">
+    <input type="submit" value="Add achievement" name="submit" class="btn blue">
+    <!-- </div> -->
+    
+    </div>
+    </form>
 </div>
 
 <?php
