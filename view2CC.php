@@ -1,7 +1,7 @@
 <?php
-
+require 'connection.php';
 // Connect to DB
-$conn = mysqli_connect('localhost', 'akshatvg', 'qwerty', 'exc-vtop');
+$conn = mysqli_connect($host, $username, $password, $dbname);
 
 // Check Connection
 // if (!$conn) {
