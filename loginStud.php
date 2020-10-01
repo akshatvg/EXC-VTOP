@@ -63,7 +63,7 @@ if (isset($_POST['loginStudBtn'])) {
         echo "<script>M.toast({ html: 'Registration Number cannot be empty' });</script>";
     } else {
         $regNo = $_POST['regNo'];
-        if (!preg_match('/[0-9]{5}/', $regNo)) {
+        if (!preg_match('/[1-2][5-9][A-Za-z]{3}[0-9]{4}/', $regNo)) {
             echo "<script>M.toast({ html: 'Registration Number does not follow the VIT prescribed format' });</script>";
         }
     }
