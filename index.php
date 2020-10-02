@@ -51,7 +51,7 @@ include("templates/nav.php");
             </a>
         </div>
         <div class="col s12 m4">
-            <a href="#!">
+            <a href="faculty.php">
                 <div class="card white card-top-orange">
                     <div class="card-content">
                         <div class="center">
