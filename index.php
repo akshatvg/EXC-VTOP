@@ -27,7 +27,7 @@ include("templates/nav.php");
     <!-- Cards -->
     <div class="row mb-5 mt-5">
         <div class="col s12 m4">
-            <a href="view2CC.php">
+            <a href="view2CC">
                 <div class="card white card-top-blue">
                     <div class="card-content">
                         <div class="center">
@@ -39,7 +39,7 @@ include("templates/nav.php");
             </a>
         </div>
         <div class="col s12 m4">
-            <a href="achievements.php">
+            <a href="achievements">
                 <div class="card white card-top-green">
                     <div class="card-content">
                         <div class="center">
@@ -51,7 +51,7 @@ include("templates/nav.php");
             </a>
         </div>
         <div class="col s12 m4">
-            <a href="faculty.php">
+            <a href="faculty">
                 <div class="card white card-top-orange">
                     <div class="card-content">
                         <div class="center">

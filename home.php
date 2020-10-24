@@ -45,7 +45,7 @@ include("templates/nav-vit.php");
                     <p class="text-colored">With responsive fresh look and feel.</p>
                 </div>
                 <div class="card-action center">
-                    <a href="loginStud.php" class="btn btn-exc z-depth-0 waves-effect">Login to EXC-VTOP</a>
+                    <a href="loginStud" class="btn btn-exc z-depth-0 waves-effect">Login to EXC-VTOP</a>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@ include("templates/nav-vit.php");
                     <p class="text-colored">With more information about students.</p>
                 </div>
                 <div class="card-action center">
-                    <a href="loginFaculty.php" class="btn btn-exc-green z-depth-0 waves-effect">Faculty Login</a>
+                    <a href="loginFaculty" class="btn btn-exc-green z-depth-0 waves-effect">Faculty Login</a>
                 </div>
             </div>
         </div>
