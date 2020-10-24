@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION["regNo"])) {
+    header("Location: loginStud");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
