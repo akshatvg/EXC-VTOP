@@ -21,21 +21,20 @@ include("templates/nav-vit.php");
 <?php
 require('db.php');
 session_start();
-// If form submitted, insert values into the database.
 if (isset($_POST['regNo'])) {
-    // removes backslashes
+    // Removes backslashes
     $regNo = stripslashes($_REQUEST['regNo']);
-    //escapes special characters in a string
+    // Escapes special characters in a string
     $regNo = mysqli_real_escape_string($con, $regNo);
     $studPass = stripslashes($_REQUEST['studPass']);
     $studPass = mysqli_real_escape_string($con, $studPass);
-    //Checking is user existing in the database or not
+    // Checking if user exists in the database or not
     $query = "SELECT * FROM `students` WHERE regNo='$regNo' and studPass='" . $studPass . "'";
     $result = mysqli_query($con, $query);
     $rows = mysqli_num_rows($result);
     if ($rows == 1) {
         $_SESSION['regNo'] = $regNo;
-        // Redirect user to index.php
+        // Redirect user to index page
         echo "<script>window.location.href='index';</script>";
     } else {
         echo "<script>M.toast({ html: 'Either this user doesn't exist in our database or the studPass you entered is wrong. });</script>";
@@ -60,7 +59,7 @@ if (isset($_POST['regNo'])) {
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">lock</i>
                                     <input id="studPass" name="studPass" type="password" class="validate" required>
-                                    <label for="studPass">studPass</label>
+                                    <label for="studPass">Password</label>
                                 </div>
                                 <div class="center">
                                     <button name="loginStudBtn" class="btn btn-exc z-depth-0 waves-effect mb-n4" id="loginStudBtn" value="Login">Login</button>

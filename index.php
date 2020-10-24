@@ -1,4 +1,5 @@
 <?php
+require('db.php');
 session_start();
 if (!isset($_SESSION["regNo"])) {
     header("Location: loginStud");
@@ -41,7 +42,7 @@ include("templates/nav.php");
                         <div class="center">
                             <i class="material-icons small text-colored">visibility</i>
                         </div>
-                        <span class="card-title black-text center mt-2">View 2CC Courses</span>
+                        <span class="card-title black-text center mt-2">View Courses</span>
                     </div>
                 </div>
             </a>

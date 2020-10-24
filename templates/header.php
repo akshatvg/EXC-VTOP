@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="libs/css/spacing.css">
     <link rel="stylesheet" href="libs/css/index.css">
-    <link rel="stylesheet" href="libs/css/studentDash.css">
+    <link rel="stylesheet" href="libs/css/tables.css">
 
     <!-- Title -->
     <title>EXC-VTOP</title>

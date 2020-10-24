@@ -1,28 +1,10 @@
 <?php
-require 'connection.php';
-// Connect to DB
-$conn = mysqli_connect($host, $username, $password, $dbname);
-
-// Check Connection
-// if (!$conn) {
-//     echo "<script>M.toast({ html: 'Database Connection Error' });</script>";
-// }
-
-// SQL Query for Getting All Courses
-$sql = "SELECT code,title,emp_name,emp_school,max_seats FROM courses ORDER BY code";
-
-// Make Query & Get Result
-$result = mysqli_query($conn, $sql);
-
-// Fetch Resulting Rows as an Array
-$courses = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-// Free Result to Free Memory
-mysqli_free_result($result);
-
-// Close Connection
-mysqli_close($conn);
-
+require('db.php');
+session_start();
+if (!isset($_SESSION["regNo"])) {
+    header("Location: loginStud");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -51,30 +33,42 @@ include("templates/nav.php");
     <div class="row mt-5">
         <h4>View All 2CC Courses</h4>
     </div>
-    <!-- DataTable -->
+    <!-- Table -->
     <div class="row">
-        <div id="man" class="col s12">
-            <div class="card">
+        <div class="col s12">
+            <div class="card material-table">
+                <div class="table-header">
+                    <span class="table-title">Available Courses</span>
+                    <div class="actions">
+                        <a href="#" class="search-toggle waves-effect btn-flat nopadding"><i class="material-icons">search</i></a>
+                    </div>
+                </div>
                 <table id="2ccCourseTable" class="responsive-table highlight centered">
                     <thead>
                         <tr>
                             <th>CODE </th>
-                            <th>COURSE TITLE </th>
-                            <th>EMPLOYEE NAME </th>
-                            <th>EMPLOYEE SCHOOL </th>
-                            <th>MAXIMUM SEATS </th>
+                            <th>COURSE NAME </th>
+                            <th>FACULTY NAME </th>
+                            <th>CLUB NAME </th>
                         </tr>
                     </thead>
                     <tbody id="2ccCourses">
-                        <?php foreach ($courses as $course) { ?>
-                            <tr>
-                                <td><?php echo htmlspecialchars($course['code']); ?></td>
-                                <td><?php echo htmlspecialchars($course['title']); ?></td>
-                                <td><?php echo htmlspecialchars($course['emp_name']); ?></td>
-                                <td><?php echo htmlspecialchars($course['emp_school']); ?></td>
-                                <td><?php echo htmlspecialchars($course['max_seats']); ?></td>
-                            </tr>
-                        <?php } ?>
+                        <?php
+                        // Make Query & Get Result
+                        $sql = "SELECT courseCode,courseName,facultyCoord,clubName FROM 2ccCourses ORDER BY courseCode";
+                        $result = mysqli_query($con, $sql);
+                        // Associative array
+                        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+                        ?>
+                        <!-- Display courses -->
+                        <td><?php echo htmlspecialchars($row['courseCode']); ?></td>
+                        <td><?php echo htmlspecialchars($row['courseName']); ?></td>
+                        <td><?php echo htmlspecialchars($row['facultyCoord']); ?></td>
+                        <td><?php echo htmlspecialchars($row['clubName']); ?></td>
+                        <?php
+                        // Free result set
+                        mysqli_free_result($result);
+                        ?>
                     </tbody>
                 </table>
             </div>
@@ -85,6 +79,8 @@ include("templates/nav.php");
 <?php
 include("templates/footer.php");
 ?>
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="libs/js/view2CCTable.js"></script>
 
 <body>
 
