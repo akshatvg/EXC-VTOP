@@ -15,9 +15,9 @@ include("templates/metas.php");
 ?>
 
 <!-- URLs -->
-<meta name="url" content="https://exc-vtop.akshatvg.com">
-<meta property="og:url" content="https://exc-vtop.akshatvg.com">
-<link rel="canonical" href="https://exc-vtop.akshatvg.com">
+<meta name="url" content="https://exc-vtop.akshatvg.com/achievements">
+<meta property="og:url" content="https://exc-vtop.akshatvg.com/achievements">
+<link rel="canonical" href="https://exc-vtop.akshatvg.com/achievements">
 
 <?php
 include("templates/header.php");
@@ -26,6 +26,7 @@ include("templates/header.php");
 <?php
 include("templates/nav.php");
 ?>
+
 <!-- Main Content -->
 <div class="container">
     <!-- Heading -->
@@ -54,34 +55,31 @@ include("templates/nav.php");
                         </tr>
                     </thead>
                     <tbody id="2ccCourses">
-                        <!-- <?php foreach ($courses as $course) { ?>
-                            <tr>
-                                <td><?php echo htmlspecialchars($course['code']); ?></td>
-                                <td><?php echo htmlspecialchars($course['title']); ?></td>
-                                <td><?php echo htmlspecialchars($course['emp_name']); ?></td>
-                                <td><?php echo htmlspecialchars($course['emp_school']); ?></td>
-                                <td><?php echo htmlspecialchars($course['max_seats']); ?></td>
-                            </tr>
-                        <?php } ?> -->
-                        <tr>
-                            <td>HackerRank</td>
-                            <td>Competition</td>
-                            <td>Online coding Competition</td>
-                            <td class="green-text ">Approved</td>
-                            <td><a href="#!"><i class="material-icons blue-text">file_download</i></a></td>
-                            <td><a href="#!"><i class="material-icons red-text text-accent-2 modal-trigger" href="#modal2">delete</i></a></td>
-                            <!-- Modal Structure -->
-                            <div id="modal2" class="modal">
-                                <div class="modal-content">
-                                    <h6>Are you sure you want to delete achievement?</h6>
-                                    <p class="red-text">This action cannot be undone!</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Delete</a>
-                                </div>
-                            </div>
-                            <!-- modal end -->
-                        </tr>
+                        <?php
+                        // Make Query & Get Result
+                        // $sql = "SELECT studAchievements FROM students ORDER BY timestamp DESC LIMIT 1;";
+                        $sql = "SELECT studAchievements FROM students;";
+                        $result = mysqli_query($con, $sql);
+                        $temp = array();
+                        // Adds each records/row to $temp
+                        while ($row = mysqli_fetch_row($result)) {
+                            $temp[] = $row;
+                        }
+                        // Formats json from temp and shows/print on page
+                        $data = json_encode($temp);
+                        // print_r($data);
+                        if (count($data->stand)) {
+                            // Cycle through the array
+                            foreach ($data->data as $idx => $data) {
+                                // Output a row
+                                echo "<tr>";
+                                echo "<td>$data->type</td>";
+                                echo "<td>$data->title</td>";
+                                echo "</tr>";
+                            }
+                        }
+                        ?>
+                        <!-- Display courses -->
                         <tr>
                             <td>Google SWE</td>
                             <td>Internship</td>

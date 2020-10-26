@@ -6,9 +6,9 @@ include("templates/metas.php");
 ?>
 
 <!-- URLs -->
-<meta name="url" content="https://exc-vtop.akshatvg.com">
-<meta property="og:url" content="https://exc-vtop.akshatvg.com">
-<link rel="canonical" href="https://exc-vtop.akshatvg.com">
+<meta name="url" content="https://exc-vtop.akshatvg.com/faculty">
+<meta property="og:url" content="https://exc-vtop.akshatvg.com/faculty">
+<link rel="canonical" href="https://exc-vtop.akshatvg.com/faculty">
 
 <?php
 include("templates/header.php");
