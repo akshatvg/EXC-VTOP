@@ -10,6 +10,7 @@ body {
 }
 
 /* Button Outline */
+
 button {
     border: none;
     outline: none;
@@ -38,6 +39,16 @@ button {
     z-index: 9000000;
 }
 
+
+
+#loader.show {
+    -webkit-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+    -o-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+    transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
 #loader.fullscreen {
     padding: 0;
     left: 0;
@@ -51,14 +62,6 @@ button {
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-
-#loader.show {
-    -webkit-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
-    -o-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
-    transition: opacity 0.4s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
 }
 
 #loader .circular {
